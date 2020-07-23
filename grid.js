@@ -6,3 +6,10 @@ export function randomGridPosition(){
 		y: Math.floor(Math.random() * GIRD_SIZE) + 1
 	};
 }
+
+export function outsideGrid(position){
+	return {
+		position.x < 1 || position.x > GIRD_SIZE ||
+		position.y < 1 || position.y > GIRD_SIZE;
+	};
+}
