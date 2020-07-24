@@ -32,10 +32,42 @@
 			background-color: hsl(50,100%,50%);
 			border: .25vmin solid;
 		}
+
+		h1{
+			color:red;
+		}
+		#game-board{
+			position: fixed;
+			z-index: -1;
+		}
+
+		#controller{
+			display: none;
+		}
+
+		#mobile{
+			display:none;
+		}
+
+		#desktop{
+			display: block;
+		}
 	</style>
+	<link rel="stylesheet" href="styles/styles.css">
 	<script src="game.js" defer type="module"></script>
 </head>
 <body>
+	<div id="intro">
+		<h1 id="desktop">Press Arrow key to Start the game!</h1>
+		<h1 id="mobile">Click any button to Start the game!</h1>
+	</div>
 	<div id="game-board"></div>
+	<div id="controller">
+		<button id="upButton" >UP</button>
+		<button id="leftButton">Left</button>
+		<button id="rightButton" >Right</button>
+		<button id="downButton" >Down</button>
+	</div>
+
 </body>
 </html>
