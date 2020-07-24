@@ -38,32 +38,33 @@
 
 		#controller{
 			display: block;
-			padding: 5px;
+			padding: 10px;
 			z-index: 1;
 			position: absolute;
 			bottom: 0;
 			background-color: rgba(0,255,153,0.2);
 		}
 		button{
-			width: 100px;
-			height: 50px;
+			width: 20vw;
+			height: 7vh;
 			display:block;
 			opacity: 0.6;
+			font-size: 150%;
 			
 		}
 		#upButton{
-			margin-left: 100px;
+			margin-left: 20vw;
 		}
 		#leftButton{
 			display: inline-block;
 			
 		}
 		#rightButton{
-			margin-left: 96px;
+			margin-left: 20vw;
 			display: inline-block;
 		}
 		#downButton{
-			margin-left:100px;
+			margin-left:20vw;
 		}
 		#mobile{
 			display:block;
